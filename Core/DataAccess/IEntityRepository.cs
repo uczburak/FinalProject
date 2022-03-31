@@ -12,7 +12,7 @@ namespace Core.DataAccess
     //class: referans tip
     //IEntity: IEntity veya IEntity implemente eden bir class olabilir
     //new(): Interface classları new lenemez.
-    public interface IEntityRepository<T> where T:class, IEntity, new()
+    public interface IEntityRepository<T> where T:class, IDto, new()
     {
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
         T Get(Expression<Func<T, bool>> filter);

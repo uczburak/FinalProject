@@ -44,8 +44,8 @@ namespace WebAPI
              * Autofac is also another effective injection type in projects that which iplements AOP designs
              * Autofac can be injected inside of IoC containers
              */
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService, ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
